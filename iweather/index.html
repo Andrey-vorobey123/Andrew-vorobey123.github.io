@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>iWeather</title>
+    <link rel="SHORTCUT ICON" href="./img/earth.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header__wrapper">
+
+                <div class="header__logo">
+                    <a href="#!" class="header__logo-link">
+                        <img src="./img/logo2.png" alt="iWeather" class="header__logo-pic">
+                    </a>
+                </div>
+
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a href="#!" class="header__item-link">Weather</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#!" class="header__item-link">Locations</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="https://www.youtube.com/watch?v=vLeAkrd_kG8" class="header__item-link">Videos</a>
+                        </li>
+                        <button class="header__item h-b" id="sign">
+                            <a href="#!" class="header__item-link">Sign in</a>
+                        </button>
+                    </ul>
+                </nav>
+            </div>
+       </div>
+    </header>
+
+    <section class="weather">
+        <div class="wrapper">
+            <div class="weather-title">
+                <h2 class="section-title-style">   
+                    Weather: what is on the street?
+                </h2>
+            </div>
+
+            <div class="now-block wow fadeInUp" data-wow-delay="0.1s">
+                <figure class="now-block-one" >
+                    <img src="./img/msk.jpg" alt="" class="one-pic">
+                    <figcaption class="">
+                        
+                        <div class="weather-now one-pic-caption">
+                            <div class="firstrow">
+                                <div class="now-icon" id="msk-ico">
+                                   <img src="./img/loading.png" width="32px" height="32px" alt="">
+                                </div>
+                                <div class="now-desc" id="msk-desc">Loading...</div>
+                            </div>
+                            <div class="now-temp" id="msk-temp"></div>
+                        </div>
+                        <div class="one-pic-title">
+                            Moscow
+                        </div>
+                        
+                    </figcaption>
+                </figure>
+
+                <figure class="now-block-one" >
+                    <img src="./img/location.jpg" alt="" class="one-pic">
+                    <figcaption class="">
+                        
+                        <div class="weather-now one-pic-caption">
+                            <div class="firstrow">
+                                <div class="now-icon" id="loc-ico">
+                                    <img src="./img/loading.png" width="32px" height="32px" alt="">
+                                </div>
+                                <div class="now-desc" id="loc-desc">Loading...</div>
+                            </div>
+                            <div class="now-temp" id="loc-temp"></div>
+                        </div>
+                        <div class="one-pic-title" id="loc-title">
+                            Your location
+                        </div>
+                        
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="inputt" id="scroll">
+                <input type="search" class="searching__inputt" id="sech-in" placeholder="Enter city (en, ru)">
+                <button class="searching__button" id="sech-but">Search</button>
+            </div>
+            <div class="searching__block searching__block-animate">
+                <figure class="searching__block-one">
+                    <img src="/img/road.jpg" alt="" class="search__pic">
+                    <figcaption>
+                        <div class="sech__desc1"> 
+                            <div class="searching__title" id="sech-name">
+                                Saint-Petersburg
+                            </div>
+                            <div class="sech__wrap">
+                                <div class="sech__main desc-design">
+                                    <div class="date">
+                                        Today
+                                    </div>
+                                    <div class="firstrow">
+                                        <div class="now-icon" id="sech-ico">
+                                            <img src="./img/loading.png" width="32px" height="32px"  alt="">
+                                        </div>
+                                        <div class="now-desc now-desc-sech" id="sech-desc">Loading</div>
+                                    </div>
+                                    <div class="sech__now-temp" id="">
+                                        <div class="temp-now" id="sech-temp-now"></div>
+                                        <div class="temp-min" id="sech-temp-min"></div>
+                                        <div class="hovers" id="sech-feel">
+                                        
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="sech__submain desc-design">
+                                    <div class="submain__row humidity">
+                                        <div class="submain-icon">
+                                            <img src="./img/humindity.png" width="55px" height="55px" alt="">
+                                        </div>
+                                        <div class="submain-txt" id="sech-hum"></div>
+                                    </div>
+                                    <div class="submain__row pressure">
+                                        <div class="submain-icon">
+                                            <img src="./img/barometer.png" width="51px" height="51px" alt="">
+                                        </div>
+                                        <div class="submain-txt" id="sech-pres"></div>
+                                    </div>
+                                    <div class="submain__row wind-speed">
+                                        <div class="submain-icon">
+                                            <img src="./img/wind.svg" width="51px" height="53px" alt="">
+                                        </div>
+                                        <div class="submain-txt" id="sech-wind"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="forecast__wrap">
+                                <div class="forecast">
+                                    <div class="desc-design forecast__minwrap">
+                                    <div class="time-moment" id="forecast-week_1">
+                                        Loading
+                                    </div>
+                                    <div class="now-icon" id="forecast-icon_1">
+                                        <img src="./img/loading.png" width="32px" height="32px" alt="" >
+                                    </div>
+                                    <div class="sech__now-temp">
+                                        <div class="forecast__temp-max" id="forecast-tb_1"></div>
+                                        <div class="forecast__temp-min" id="forecast-tm_1"></div>
+                                    </div>
+                                    <div class="time-wind">
+                                        <img src="./img/black-wind.png" height="30px" width="30px" alt="">
+                                        <div class="time-wind-sp" id="forecast-w_1">5 mps</div>
+                                    </div>
+                                    </div>
+                                    <div class="desc-design forecast__minwrap">
+                                    <div class="time-moment" id="forecast-week_2">
+                                        Loading
+                                    </div>
+                                    <div class="now-icon" id="forecast-icon_2">
+                                        <img src="./img/loading.png" width="32px" height="32px" alt="" >
+                                    </div>
+                                    <div class="sech__now-temp">
+                                        <div class="forecast__temp-max" id="forecast-tb_2"></div>
+                                        <div class="forecast__temp-min" id="forecast-tm_2"></div>
+                                    </div>
+                                    <div class="time-wind">
+                                        <img src="./img/black-wind.png" height="30px" width="30px" alt="">
+                                        <div class="time-wind-sp" id="forecast-w_2">5 mps</div>
+                                    </div>
+                                    </div>
+                                    <div class="desc-design forecast__minwrap">
+                                    <div class="time-moment" id="forecast-week_3">
+                                        Loading
+                                    </div>
+                                    <div class="now-icon" id="forecast-icon_3">
+                                        <img src="./img/loading.png" width="32px" height="32px" alt="" >
+                                    </div>
+                                    <div class="sech__now-temp">
+                                        <div class="forecast__temp-max" id="forecast-tb_3"></div>
+                                        <div class="forecast__temp-min" id="forecast-tm_3"></div>
+                                    </div>
+                                    <div class="time-wind">
+                                        <img src="./img/black-wind.png" height="30px" width="30px" alt="">
+                                        <div class="time-wind-sp" id="forecast-w_3">5 mps</div>
+                                    </div>
+                                    </div>
+                                    <div class="desc-design forecast__minwrap">
+                                        <div class="time-moment" id="forecast-week_4">
+                                            Loading
+                                        </div>
+                                        <div class="now-icon" id="forecast-icon_4">
+                                            <img src="./img/loading.png" width="32px" height="32px" alt="" >
+                                        </div>
+                                        <div class="sech__now-temp">
+                                            <div class="forecast__temp-max" id="forecast-tb_4"></div>
+                                            <div class="forecast__temp-min" id="forecast-tm_4"></div>
+                                        </div>
+                                        <div class="time-wind">
+                                            <img src="./img/black-wind.png" height="30px" width="30px" alt="">
+                                            <div class="time-wind-sp" id="forecast-w_4">5 mps</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </figcaption>
+                </figure>
+
+            </div>
+
+
+            
+        </div>
+        <footer class="footer">
+            <div class="wrapper">
+                <div class="footer__block">
+                    <img src="./img/logo2.png" alt="" class="footer__logo-pic">
+                    <nav class="footer__nav">
+                        <a href="#!" class="nav-item">About</a>
+                        <a href="#!" class="nav-item">Team</a>
+                        <a href="#!" class="nav-item">Careers</a>
+                        <a href="#!" class="nav-item">Privacy Policy</a>
+                    </nav>
+                    <div class="footer__social">
+                        <a href="https://vk.com/andgen" target="_blank" class="social-item">
+                            <img src="./img/vk.png" alt="" class="social-pic">
+                        </a>
+                        <a href="#!" class="social-item">
+                            <img src="./img/inst.png" alt="" class="social-pic">
+                        </a>
+                        <a href="https://github.com/Andrey-vorobey123" target="_blank" class="social-item">
+                            <img src="./img/git.png" alt="" class="social-pic">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    
+    
+    
+       
+    <div class="modal">
+        <div class="modal__dialog">
+            <div class="modal__header">
+                <h3 class="modal__title">Sign in</h3>
+                <button class="close">&times;</button>
+            </div>
+            <div class="modal__email">
+                <input type="text" class="input email__input" placeholder="E-mail">
+            </div>
+            <div class="modal__password">
+                <input type="text" class="input pass__input" placeholder="Password">
+            </div>
+            <div class="modal__in">
+                <button class="button-in" id="sign-close">Sign in</button>
+            </div>   
+    
+            
+        </div>
+    </div>
+
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
