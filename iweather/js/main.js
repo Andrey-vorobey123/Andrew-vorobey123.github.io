@@ -32,7 +32,7 @@ fetch('https://api.openweathermap.org/data/2.5/weather?lang=en&q=Moscow&units=me
 .then(function (resp) { return resp.json() })
 .then(function (data) {
     console.log(data);
-    document.querySelector("#msk-ico").innerHTML = `<img src="./iweather/w-ico/${data.weather[0].icon}.png"/>`;
+    document.querySelector("#msk-ico").innerHTML = `<img src="/iweather/w-ico/${data.weather[0].icon}.png"/>`;
     document.querySelector("#msk-desc").innerHTML = (`${data.weather[0].description[0].toUpperCase()+data.weather[0].description.slice(1)}`);
     document.querySelector("#msk-temp").innerHTML += Math.round(data.main.temp) + '&deg;';
 })
@@ -49,7 +49,7 @@ if (navigator.geolocation) {
         .then(function (lesp) { return lesp.json() })
         .then(function (datas) {
             console.log(datas);
-            document.querySelector("#loc-ico").innerHTML = `<img src="iweather/w-ico/${datas.weather[0].icon}.png"/>`;
+            document.querySelector("#loc-ico").innerHTML = `<img src="/iweather/w-ico/${datas.weather[0].icon}.png"/>`;
             document.querySelector("#loc-desc").innerHTML = (`${datas.weather[0].description[0].toUpperCase()+datas.weather[0].description.slice(1)}`);
             document.querySelector("#loc-temp").innerHTML += Math.round(datas.main.temp) + '&deg;';
             document.querySelector("#loc-title").innerHTML = (`${datas.name}`);
@@ -71,7 +71,7 @@ if (navigator.geolocation) {
 function getWNow(d) {
     console.log(d);
     document.querySelector("#sech-name").innerHTML = (`${d.name}`);
-    document.querySelector("#sech-ico").innerHTML = `<img src="iweather/w-ico/${d.weather[0].icon}.png"/>`;
+    document.querySelector("#sech-ico").innerHTML = `<img src="/iweather/w-ico/${d.weather[0].icon}.png"/>`;
     document.querySelector("#sech-desc").innerHTML = (`${d.weather[0].description[0].toUpperCase()+d.weather[0].description.slice(1)}`);
     document.querySelector("#sech-temp-now").innerHTML = Math.round(d.main.temp) + '&deg;/';
     document.querySelector("#sech-temp-min").innerHTML = Math.round(d.main.temp_min) + '&deg;';
@@ -95,7 +95,7 @@ function getWForecast(d) {
         
         let date = new Date(dt.getTime() + i * 24 * 60 * 60 * 1000);
         document.getElementById(`forecast-week_${i}`).innerHTML = week[date.getDay()];
-        document.getElementById(`forecast-icon_${i}`).innerHTML = `<img src="iweather/w-ico/${d.daily[i].weather[0].icon}.png"/>`;
+        document.getElementById(`forecast-icon_${i}`).innerHTML = `<img src="/iweather/w-ico/${d.daily[i].weather[0].icon}.png"/>`;
         document.getElementById(`forecast-tb_${i}`).innerHTML = Math.round(d.daily[i].temp.day) + '&deg;/';
         document.getElementById(`forecast-tm_${i}`).innerHTML = Math.round(d.daily[i].temp.min) + '&deg;';
         document.getElementById(`forecast-w_${i}`).innerHTML = Math.round(d.daily[i].wind_speed) + ' mps';
