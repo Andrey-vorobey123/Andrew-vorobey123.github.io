@@ -32,7 +32,7 @@ fetch('https://api.openweathermap.org/data/2.5/weather?lang=en&q=Moscow&units=me
 .then(function (resp) { return resp.json() })
 .then(function (data) {
     console.log(data);
-    document.querySelector("#msk-ico").innerHTML = `<img src="iweather/w-ico/${data.weather[0].icon}.png"/>`;
+    document.querySelector("#msk-ico").innerHTML = `<img src="./iweather/w-ico/${data.weather[0].icon}.png"/>`;
     document.querySelector("#msk-desc").innerHTML = (`${data.weather[0].description[0].toUpperCase()+data.weather[0].description.slice(1)}`);
     document.querySelector("#msk-temp").innerHTML += Math.round(data.main.temp) + '&deg;';
 })
