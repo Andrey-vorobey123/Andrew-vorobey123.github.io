@@ -1,0 +1,197 @@
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+.img{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background: url(../img/luxfon.com_3519.jpg) no-repeat fixed;
+    
+}
+.modal{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    
+    z-index: 999;
+    /* display: none; */
+}
+.is-open{
+    display: flex;
+}
+ .modal__dialog{
+    max-width: 404px;
+    width: 95%;
+    height: auto;
+    /* min-height: 552px; */
+    margin: auto;
+    background: #fff;
+    border-radius: 5px;
+    padding: 40px 45px;
+} 
+.name__input{
+    border: 1px solid #a8b0b2;
+    border-radius: 2px;
+    background: #fff;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 8px;
+    background: url(../img/svg/man.svg) no-repeat left 10px center;
+    background-size: 32px;
+    padding-left: 55px;
+    /* width: 100%; */
+    margin-left: auto;
+}
+.email__input{
+    border: 1px solid #a8b0b2;
+    border-radius: 2px;
+    background: #fff;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 8px;
+    background: url(../img/svg/Mail_icon-icons.com_52015.svg) no-repeat left 10px center;
+    background-size: 32px;
+    padding-left: 55px;
+    /* width: 100%; */
+    margin-left: auto;
+}
+.phone__input{
+    border: 1px solid #a8b0b2;
+    border-radius: 2px;
+    background: #fff;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 8px;
+    background: url(../img/svg/phone.svg) no-repeat left 15px center;
+    background-size: 28px;
+    padding-left: 55px;
+    /* width: 100%; */
+    margin-left: auto;
+}
+.modal__email{
+    margin-top: 35px;
+}
+.desc__input{
+    border: 1px solid #a8b0b2;
+    border-radius: 2px;
+    background: #fff;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 8px;
+    background: url(../img/svg/copy.svg) no-repeat left 11px center;
+    background-size: 26px;
+    padding-left: 55px;
+    /* width: 100%; */
+    margin-left: auto;
+}
+.modal__password{
+    margin-top: 35px;
+}
+.modal__in{
+    margin-top: 35px;
+}
+.button-in{
+    border: 0;
+    border-radius: 2px;
+    background: #2f889a;
+    width: 309px;
+    color: white;
+    font-family: 'Lato';
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 29px;
+    padding: 8px;
+    transition: .2s all ease-out;
+}
+.button-in:hover, .button-in:focus, .button-in:active{
+    background: #3599ae;
+}
+.modal__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 0;
+}
+.modal__title{
+    font-weight: 500;
+    font-size: 35px;
+    position: relative;
+    padding-bottom: 8px;
+    margin: 0;
+}
+.modal__title::after{
+    display: block;
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: #2f889a;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: .4s all ease-in-out;
+}
+
+.close{
+    font-size: 36px;
+    border: none;
+    background-color: transparent;
+}
+input[type="text"]::placeholder{
+    font-family: 'Lato';
+    color: #495051;
+}
+.status{
+    background-color: white;
+    width: 309px;
+    border-radius: 2px;
+    
+}
+.status_txt{
+    font-weight: 500;
+    font-size: 24px;
+    /* color: rgb(184, 33, 56); */
+    /* padding: 3px; */
+    margin: 0;
+    padding-top: 8px;
+}
+.status_ok{
+    color: #4F7E2A;
+}
+.status_no{
+    color:  rgb(184, 33, 56);
+}
+.status_hide{
+    display: none;
+}
+.styleer{
+    color: rgb(184, 33, 56);
+    margin: 0;
+}
+.footer{
+    position: fixed;
+    right:  0;
+    bottom: 0;
+    display: flex;
+    z-index: 999;
+}
+.social-item{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.social-pic{
+    width: 50px;
+    height: 50px;
+}

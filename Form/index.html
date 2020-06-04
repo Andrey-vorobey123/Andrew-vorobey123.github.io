@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    
+    <div class="modal">
+        <div class="modal__dialog">
+            <div class="modal__header">
+                <h3 class="modal__title">Contact us</h3>
+                <button class="close">&times;</button>
+            </div>
+            <div class="modal__email">
+                <input type="text" class="input name__input" id="name" placeholder="Name">
+            </div>
+            <p class="valname status_hide styleer">Invalid name</p>
+            <div class="modal__password">
+                <input type="text" class="input email__input" id="email" placeholder="E-mail">
+            </div>
+            <p class="valmail status_hide styleer">Invalid e-mail. Example: test@mail.com</p>
+            <div class="modal__password">
+                <input type="text" class="input phone__input" id="phone" placeholder="Phone: +x(xxx)xxx-xx-xx">
+            </div>
+            <p class="valphone status_hide styleer">Invalid phone. Example: +7(906)555-55-55</p>
+            <div class="modal__password">
+                <input type="text" class="input desc__input" id="desc" placeholder="Description">
+            </div>
+            <div class="modal__in">
+                <button class="button-in" id="sign-close">Sent</button>
+            </div>   
+            <div class="status status_hide">
+                <h4 class="status_txt" id="status"></h4>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="footer">
+        <a href="https://vk.com/andgen" target="_blank" class="social-item">
+            <img src="./img/vk.png" alt="" class="social-pic">
+        </a>
+        <a href="https://github.com/Andrey-vorobey123" target="_blank" class="social-item">
+            <img src="./img/git.png" alt="" class="social-pic">
+        </a>
+    </div>
+
+
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-storage.js"></script>
+        <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyAa21Y990UM3PIh8r6mEHxMG80UWL8ZsV0",
+            authDomain: "test1-2df29.firebaseapp.com",
+            databaseURL: "https://test1-2df29.firebaseio.com",
+            projectId: "test1-2df29",
+            storageBucket: "test1-2df29.appspot.com",
+            messagingSenderId: "447975671178",
+            appId: "1:447975671178:web:426b9a41ac76d81139b473",
+            measurementId: "G-QCPRYQVBR7"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        const db = firebase.firestore();
+        </script>
+        <script src="./js/main.js"></script>
+    
+</body>
+</html>
