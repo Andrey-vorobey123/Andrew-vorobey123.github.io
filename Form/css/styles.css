@@ -10,7 +10,7 @@ html{
     
 }
 body{
-    background: url(../img/luxfon.com_3519.jpg) no-repeat fixed;
+    background: url(/Form/img/luxfon.com_3519.jpg) no-repeat fixed;
     
 }
 .modal{
@@ -45,7 +45,7 @@ body{
     font-size: 20px;
     line-height: 24px;
     padding: 8px;
-    background: url(../img/svg/man.svg) no-repeat left 10px center;
+    background: url(/Form/img/svg/man.svg) no-repeat left 10px center;
     background-size: 32px;
     padding-left: 55px;
     /* width: 100%; */
@@ -59,7 +59,7 @@ body{
     font-size: 20px;
     line-height: 24px;
     padding: 8px;
-    background: url(../img/svg/Mail_icon-icons.com_52015.svg) no-repeat left 10px center;
+    background: url(/Form/img/svg/Mail_icon-icons.com_52015.svg) no-repeat left 10px center;
     background-size: 32px;
     padding-left: 55px;
     /* width: 100%; */
@@ -73,7 +73,7 @@ body{
     font-size: 20px;
     line-height: 24px;
     padding: 8px;
-    background: url(../img/svg/phone.svg) no-repeat left 15px center;
+    background: url(/Form/img/svg/phone.svg) no-repeat left 15px center;
     background-size: 28px;
     padding-left: 55px;
     /* width: 100%; */
@@ -90,7 +90,7 @@ body{
     font-size: 20px;
     line-height: 24px;
     padding: 8px;
-    background: url(../img/svg/copy.svg) no-repeat left 11px center;
+    background: url(/Form/img/svg/copy.svg) no-repeat left 11px center;
     background-size: 26px;
     padding-left: 55px;
     /* width: 100%; */
