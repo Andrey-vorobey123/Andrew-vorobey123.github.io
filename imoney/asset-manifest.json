@@ -11,7 +11,7 @@
     "precache-manifest.52343e37094a390efe5ff0440521f737.js": "/precache-manifest.52343e37094a390efe5ff0440521f737.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.b2421132.chunk.css.map": "/static/css/main.b2421132.chunk.css.map",
-    "static/media/git.png": "/imoney/static/media/git.6cec850b.png",
+    "imoney/static/media/git.png": "/imoney/static/media/git.6cec850b.png",
     "static/media/App.css": "/imoney/static/media/money.21addda9.jpg",
     "static/media/money.svg": "/static/media/money.5d7d78cd.svg"
   }
